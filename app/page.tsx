@@ -2,6 +2,7 @@ import Image from 'next/image'
 import styles from './page.module.scss'
 import Info from '@/components/Info';
 import Form from '@/components/Form';
+import Footer from '@/components/Footer';
 
 export default function Home() {
   return (
@@ -16,7 +17,9 @@ export default function Home() {
             <Form />
           </div>
         </main>
-        <footer>Footer</footer>
+        <footer>
+          <Footer />
+        </footer>
       </div>
     </>
   );
