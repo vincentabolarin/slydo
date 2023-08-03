@@ -1,0 +1,9 @@
+.container {
+  min-height: 100vh;
+
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    box-shadow: 1px 1px 5px var(--gray-light);
+  }
+}

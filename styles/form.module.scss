@@ -1,0 +1,64 @@
+.container {
+    padding: 2rem 8rem;
+
+    .heading {
+        text-align: center;
+        font-size: 1.1rem;
+        font-weight: 600;
+        margin-bottom: 2rem;
+    }
+
+    .detail {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+
+        label {
+            margin-bottom: .2rem;
+        }
+
+        select {
+            cursor: pointer;
+        }
+    }
+
+    .passcode {
+        .passcodeItems {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .passcodeItem {
+                width: 3rem;
+                height: 3rem;
+                text-align: center;
+                font-size: 1rem;
+                cursor: not-allowed;
+                pointer-events: none;
+
+                &:first-child {
+                    cursor: text;
+                    pointer-events: all;
+                }
+
+                &:focus {
+                    border: 1px solid var(--primary-color);
+                    outline: none;
+                }
+            }
+        }
+    }
+
+    button {
+        width: 100%;
+        background-color: var(--primary-color);
+        color: white;
+        margin-top: 2rem;
+
+        &[disabled] {
+            background-color: var(--gray-dark);
+            cursor: not-allowed;
+            pointer-events: none;
+        }
+    }
+}
