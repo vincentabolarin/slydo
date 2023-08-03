@@ -1,0 +1,38 @@
+.container {
+    padding: 4rem 4rem 0 4rem;
+
+    .main {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+
+        .name {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+
+        .other {
+            p {
+                margin-bottom: .7rem;
+                cursor: pointer;
+            }
+            .heading {
+                font-weight: 500;
+                margin-bottom: 1rem;
+                cursor: default;
+            }
+        }
+    }
+
+    .copyright {
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem 0;
+        border-top: 1px solid var(--gray-light);
+        margin-top: 4rem;
+
+        p {
+            cursor: pointer;
+        }
+    }
+}

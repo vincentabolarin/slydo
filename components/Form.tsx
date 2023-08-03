@@ -92,7 +92,8 @@ const Form = () => {
               <option value="Select One" disabled>
                 Select One
               </option>
-              <option value="GTB">GTB</option>
+              <option value="First Bank">First Bank</option>
+              <option value="Heritage Bank">Heritage Bank</option>
               <option value="Wema">Wema</option>
               <option value="Zenith">Zenith</option>
             </select>
