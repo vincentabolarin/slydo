@@ -1,9 +1,20 @@
 .container {
   min-height: 100vh;
+  max-width: 100vw;
+  overflow-x: hidden;
 
   main {
     display: grid;
     grid-template-columns: 1fr 1fr;
     box-shadow: 1px 1px 5px var(--gray-light);
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .container {
+    main {
+      display: flex;
+      flex-direction: column;
+    }
   }
 }
