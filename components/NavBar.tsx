@@ -7,7 +7,8 @@ import logo from "/public/slydo_logo.png";
 import { Menu } from "@mui/icons-material";
 
 const NavBar = () => {
-  const toggleMenu = () => {
+  const toggleMenu = (e: any) => {
+    e.preventDefault();
     const mobileMenuItems = document.getElementById("mobileMenuItems") as HTMLElement;
     mobileMenuItems.classList.toggle(`${styles.active}`);
   }
@@ -34,9 +35,7 @@ const NavBar = () => {
         </div>
 
         <div className={styles.mobileMenu} onClick={toggleMenu}>
-          <Link href="/">
-            <Menu />
-          </Link>
+          <Menu />
         </div>
       </div>
 
