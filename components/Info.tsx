@@ -8,7 +8,7 @@ const Info = () => {
     return (
         <>
             <div className={styles.container}>
-                <p className="font-big">
+                <p className={`font-big ${styles.mainText}`}>
                     You have a <span className="font-blue">Payment</span> from an Anonymous
                 </p>
 
