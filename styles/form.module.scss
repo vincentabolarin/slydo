@@ -1,6 +1,5 @@
 .container {
     padding: 2rem 8rem;
-    max-width: 90%;
 
     .heading {
         text-align: center;
@@ -66,6 +65,6 @@
 
 @media screen and (max-width: 968px) {
     .container {
-        padding: 2rem 4rem;
+        padding: 2rem 2rem;
     }
 }
