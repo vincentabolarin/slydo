@@ -21,7 +21,9 @@ label {
   font-weight: 600;
 }
 
-select, input, button {
+select,
+input,
+button {
   height: 3rem;
   border: 1px solid var(--gray-light);
   border-radius: .2rem;
@@ -59,4 +61,15 @@ p {
 
 ::placeholder {
   color: var(--gray-light);
+}
+
+@media screen and (max-width: 1280px) {
+  select,
+  input {
+    border: 1px solid var(--gray-dark);
+  }
+
+  label {
+    font-size: 1.2rem;
+  }
 }

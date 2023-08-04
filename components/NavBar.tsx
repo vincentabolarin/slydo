@@ -35,7 +35,7 @@ const NavBar = () => {
         </div>
 
         <div className={styles.mobileMenu} onClick={toggleMenu}>
-          <Menu />
+          <Menu sx={{ fontSize: "3rem" }} />
         </div>
       </div>
 
