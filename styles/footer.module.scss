@@ -1,6 +1,5 @@
 .container {
     padding: 4rem 4rem 0 4rem;
-    max-width: 90%;
 
     .main {
         display: grid;
@@ -17,13 +16,19 @@
             justify-content: space-between;
 
             .other {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
                 p {
                     margin-bottom: .7rem;
+                    padding: 0;
                     cursor: pointer;
                 }
                 .heading {
                     font-weight: 500;
                     margin-bottom: 1rem;
+                    padding: 0;
                     cursor: default;
                 }
             }
@@ -45,6 +50,8 @@
 
 @media screen and (max-width: 1280px) {
     .container {
+        padding: 4rem 2rem 0 2rem;
+
         .main {
             display: flex;
             flex-direction: column;
